@@ -1,36 +1,46 @@
-<!DOCTYPE html>
-<html lang="bg">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News Radar - TeoMaxy</title>
-    <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; max-width: 900px; margin: auto; padding: 40px; background: #f0f2f5; color: #333; }
-        .container { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        h1 { color: #1a73e8; border-bottom: 2px solid #1a73e8; padding-bottom: 10px; }
-        .status { background: #e8f0fe; border-left: 5px solid #1a73e8; padding: 15px; margin: 20px 0; }
-        .footer { margin-top: 50px; font-size: 0.8em; color: #666; text-align: center; }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>🛡️ Радар за Дезинформация: TeoMaxy</h1>
-        <p>Автоматизирана система за анализ на медийни манипулации и координирани мрежи.</p>
-        
-        <div class="status">
-            <strong>Текущо състояние:</strong> Системата е в процес на първоначално сканиране. 
-            <br>Очаквайте първия доклад след приключване на анализа на БТА vs Жълти медии.
-        </div>
 
-        <h3>🎯 Цели на проекта:</h3>
-        <ul>
-            <li>Идентифициране на "ферми за новини".</li>
-            <li>Разкриване на скрити връзки между сайтове чрез Whois и метаданни.</li>
-            <li>AI анализ на емоционалния заряд (Clickbait).</li>
-        </ul>
-    </div>
-    <div class="footer">
-        © 2026 TeoMaxy News Radar Project | Powered by Llama 3.1 & Pop!_OS
-    </div>
-</body>
-</html>
+    <!DOCTYPE html>
+    <html lang="bg">
+    <head>
+        <meta charset="UTF-8">
+        <title>News Radar - TeoMaxy</title>
+        <style>
+            body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; max-width: 800px; margin: auto; padding: 40px; background: #1a1a2e; color: #e1e1e1; }
+            .card { background: #16213e; padding: 20px; border-radius: 10px; border-left: 5px solid #0f3460; margin-bottom: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+            .fake { border-left-color: #e94560; }
+            .official { border-left-color: #0f3460; }
+            .tag { font-size: 0.7em; text-transform: uppercase; padding: 3px 8px; border-radius: 3px; margin-right: 10px; }
+            .tag-fake { background: #e94560; }
+            .tag-off { background: #0f3460; }
+            .time { color: #999; font-size: 0.8em; }
+        </style>
+    </head>
+    <body>
+        <h1>🛡️ News Radar: Последен доклад</h1>
+        <p class="time">Обновено на: 06.04.2026 09:53</p>
+        <hr style="border: 0.5px solid #0f3460;">
+    
+        <div class="card official">
+            <span class="tag tag-off">official</span>
+            <strong>БТА</strong>
+            <p>Парламентът прие бюджет за 2026 г.</p>
+        </div>
+        
+        <div class="card fake">
+            <span class="tag tag-fake">fake</span>
+            <strong>Жълта медия X</strong>
+            <p>ШОК! КРАЙ С ПАРИТЕ! ПАРЛАМЕНТЪТ НИ ОГРАБИ!</p>
+        </div>
+        
+        <div class="card fake">
+            <span class="tag tag-fake">clickbait</span>
+            <strong>Сайт-гъба Y</strong>
+            <p>НЕВЕРОЯТНО: Вижте какво скриха от бюджета!</p>
+        </div>
+        
+        <div style="text-align: center; margin-top: 50px; font-size: 0.8em; color: #555;">
+            Автоматизирана система TeoMaxy | Pop!_OS Engine
+        </div>
+    </body>
+    </html>
+    
