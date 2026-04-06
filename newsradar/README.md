@@ -1,11 +1,19 @@
+cat <<EOF > README.md
 # 🛡️ TeoMaxy News Radar
-Автоматизиран OSINT инструмент за анализ на българското информационно пространство.
+### Автоматизирана система за анализ на медийни манипулации в България.
 
-## 🏗️ Структура
-- `/scripts`: Python инструменти за скрапинг и анализ.
-- `/data`: SQLite база данни (Relational Mapping).
-- `index.html`: Динамичен фронтенд за GitHub Pages.
+Този проект е **OSINT инструмент**, който следи връзките между официални източници и жълти медии.
 
-## 🚀 Стартиране
-1. `python3 scripts/db_setup.py`
-2. `python3 scripts/scout.py` (след като го добавиш)
+## 🚀 Функции:
+- **Entity Mapping:** Свързва сайтове чрез Whois, имейли и автори.
+- **AI Analysis:** Използва Llama 3.1 за откриване на логически противоречия.
+- **Auto-Publish:** Резултатите се качват автоматично тук: [https://teomaxy.github.io/teomaxy-news-radar/](https://teomaxy.github.io/teomaxy-news-radar/)
+
+## 🏗️ Структура:
+- \`/scripts\`: Логиката на скрапера и анализатора.
+- \`/data\`: SQLite база данни с "черния списък".
+- \`index.html\`: Фронтендът на твоя радар.
+
+---
+© 2026 TeoMaxy | Built on Pop!_OS
+EOF
